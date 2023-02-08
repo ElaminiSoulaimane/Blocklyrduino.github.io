@@ -13,10 +13,7 @@ ul:before, header:before, #main:before {
   content: "";
   display: table;
 }
- .blocklyBlockCanvas{
-  background-color: red;
-  color: red;
- }
+
 ul {
   list-style: none;
   padding: 0;
@@ -24,7 +21,7 @@ ul {
 }
 
 header {
-  background: #00969D;
+  background: #55ff00;
   padding: 0 7%;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
