@@ -38,15 +38,18 @@ html,body {
 	background: #00969D;
 	height: 25px;
 }
-
+.hed{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 #logo_Titre {
 	background: #FFFFFF;
-	float: left;
 }
 
 #header_titres {
-	margin-left: 205px;
-	position: absolute;
+	
+	
 }
 
 #header_code {
