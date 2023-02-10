@@ -62,159 +62,162 @@
 
 <body onload="BlocklyDuino.init()">
   <div class="loading"></div>
-  <div id="header">
+  <header id="header">
     <div class="hed">
-    <div id="logo_Titre">
-      <a href="./index.html">
-        <img id="clearLink" src="media/BlocklyArduino/logo.png" border="0" height="36" onclick="" />
-      </a>
-    </div>
-
-    <div id="header_titres">
-      <div id="divTitreMenu" class="hidden">
-        <div id="divTitreMenu_menu">
-          <nav id="nav_hor">
-            <ul id="main-menu">
-              <li>
-                <a><i class="fa fa-user"></i> <span id="span_menu_1"> </span> <i class="fa fa-caret-down"></i></a>
-                <ul class="submenu">
-                  <li>
-                    <a href="#" id="menu_11"> <span id="span_menu_11"> </span> </a>
-                  </li>
-                  <li>
-                    <a href="#" id="menu_12"> <span id="span_menu_12"> </span> </a>
-                  </li>
-                  <li>
-                    <a id="menu_13"> <span id="span_menu_13"> </span> <i class="fa fa-caret-right"></i></a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="#" id="menu_131" data-toggle="modal" data-target="#exampleModal"> <span
-                            id="span_menu_131"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_132" target="_blank"> <span id="span_menu_132"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="https://github.com/technologiescollege/BlocklyArduino-example" id="menu_133"
-                          target="_blank"> <span id="span_menu_133"> </span> </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a><i class="fa fa-briefcase"></i> <span id="span_menu_2"> </span> <i class="fa fa-caret-down"></i></a>
-                <ul class="submenu">
-                  <li>
-                    <a href='http://fritzing.org/download/' target='_blank' id="menu_21"> <span id="span_menu_21">
-                      </span> </a>
-                  </li>
-                  <li id="mtab_supervision">
-                    <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank" id="menu_22">
-                      <span id="span_menu_22"> </span> </a>
-                  </li>
-                  <li id="mtab_blocks">
-                    <a href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab" id="menu_23">
-                      <span id="span_menu_23"> </span> </a>
-                  </li>
-                  <li id="mtab_arduino">
-                    <a href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab"
-                      id="menu_24"> <span id="span_menu_24"> </span> </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a><i class="fa fa-user"></i> <span id="span_menu_3"> </span> <i class="fa fa-caret-down"></i></a>
-                <ul class="submenu">
-                  <li>
-                    <a href="#" id="menu_31"> <span id="span_menu_31"> </span> </a>
-                  </li>
-                  <li>
-                    <a href="#" id="menu_32"> <span id="span_menu_32"> </span> </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a><i class="fa fa-user"></i> <span id="span_menu_4"> </span> <i class="fa fa-caret-down"></i></a>
-                <ul class="submenu">
-                  <li>
-                    <a href="#configModalGlobal" data-toggle="modal" id="menu_41"> <span id="span_menu_41"> </span> </a>
-                  </li>
-                  <li>
-                    <a id="menu_42"> <span id="span_menu_42"> </span> <i class="fa fa-caret-right"></i></a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="#" id="menu_420" role='button'> <span id="span_menu_420"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_421" role='button'> <span id="span_menu_421"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_422" role='button'> <span id="span_menu_422"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_423" role='button'> <span id="span_menu_423"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_424" role='button'> <span id="span_menu_424"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_429" role='button'> <span id="span_menu_429"> </span> </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#configModal" data-toggle="modal" id="menu_43"> <span id="span_menu_43"> </span> </a>
-                  </li>
-                  <li>
-                    <a id="menu_44"> <span id="span_menu_44"> </span> <i class="fa fa-caret-right"></i></a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="#" id="menu_441"> <span id="span_menu_441"> </span> </a>
-                      </li>
-                      <li>
-                        <a href="#" id="menu_442"> <span id="span_menu_442"> </span> </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a><i class="fa fa-user"></i> <span id="span_menu_5"> </span> <i class="fa fa-caret-down"></i></a>
-                <ul class="submenu">
-                  <li>
-                    <a href="#" id="menu_51"> <span id="span_menu_51"> </span> </a>
-                  </li>
-                  <li>
-                    <a href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank"
-                      id="menu_52"> <span id="span_menu_52"> </span> </a>
-                  </li>
-                  <li>
-                    <a href="http://blockly.technologiescollege.fr/forum/" target="_blank" id="menu_53"> <span
-                        id="span_menu_53"> </span> </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="btn_menu_about" data-toggle="modal" data-target="#aboutModal">
-                  <span id="span_menu_6"> </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div id="logo_Titre">
+        <a href="./index.html">
+          <img id="clearLink" src="media/BlocklyArduino/logo.png"  height="30"  />
+        </a>
       </div>
-      <div id="divTitre">
-        <div id="btn_levels">
-          <a href="#" id="toolbox_algo" class="btn btn-level btn-default" role='button'>0</a>
-          <a href="#" id="toolbox_arduino_1" class="btn btn-level btn-default" role='button'>1</a>
-          <a href="#" id="toolbox_arduino_2" class="btn btn-level btn-default" role='button'>2</a>
-          <a href="#" id="toolbox_arduino_3" class="btn btn-level btn-default" role='button'>3</a>
-          <a href="#" id="toolbox_arduino_4" class="btn btn-level btn-default" role='button'>4</a>
-          <a href="#" id="toolbox_arduino_all" class="btn btn-level btn-default" role='button'>TOUT</a>
-          <label id="labelToolboxDefinition"></label>
+
+      <div id="header_titres">
+        <div id="divTitreMenu" class="hidden">
+          <div id="divTitreMenu_menu">
+            <nav id="nav_hor">
+              <ul id="main-menu">
+                <li>
+                  <a><i class="fa fa-user"></i> <span id="span_menu_1"> </span> <i class="fa fa-caret-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" id="menu_11"> <span id="span_menu_11"> </span> </a>
+                    </li>
+                    <li>
+                      <a href="#" id="menu_12"> <span id="span_menu_12"> </span> </a>
+                    </li>
+                    <li>
+                      <a id="menu_13"> <span id="span_menu_13"> </span> <i class="fa fa-caret-right"></i></a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" id="menu_131" data-toggle="modal" data-target="#exampleModal"> <span
+                              id="span_menu_131"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_132" target="_blank"> <span id="span_menu_132"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/technologiescollege/BlocklyArduino-example" id="menu_133"
+                            target="_blank"> <span id="span_menu_133"> </span> </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa fa-briefcase"></i> <span id="span_menu_2"> </span> <i
+                      class="fa fa-caret-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href='http://fritzing.org/download/' target='_blank' id="menu_21"> <span id="span_menu_21">
+                        </span> </a>
+                    </li>
+                    <li id="mtab_supervision">
+                      <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank" id="menu_22">
+                        <span id="span_menu_22"> </span> </a>
+                    </li>
+                    <li id="mtab_blocks">
+                      <a href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab"
+                        id="menu_23">
+                        <span id="span_menu_23"> </span> </a>
+                    </li>
+                    <li id="mtab_arduino">
+                      <a href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab"
+                        id="menu_24"> <span id="span_menu_24"> </span> </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa fa-user"></i> <span id="span_menu_3"> </span> <i class="fa fa-caret-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" id="menu_31"> <span id="span_menu_31"> </span> </a>
+                    </li>
+                    <li>
+                      <a href="#" id="menu_32"> <span id="span_menu_32"> </span> </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa fa-user"></i> <span id="span_menu_4"> </span> <i class="fa fa-caret-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#configModalGlobal" data-toggle="modal" id="menu_41"> <span id="span_menu_41"> </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a id="menu_42"> <span id="span_menu_42"> </span> <i class="fa fa-caret-right"></i></a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" id="menu_420" role='button'> <span id="span_menu_420"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_421" role='button'> <span id="span_menu_421"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_422" role='button'> <span id="span_menu_422"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_423" role='button'> <span id="span_menu_423"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_424" role='button'> <span id="span_menu_424"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_429" role='button'> <span id="span_menu_429"> </span> </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#configModal" data-toggle="modal" id="menu_43"> <span id="span_menu_43"> </span> </a>
+                    </li>
+                    <li>
+                      <a id="menu_44"> <span id="span_menu_44"> </span> <i class="fa fa-caret-right"></i></a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" id="menu_441"> <span id="span_menu_441"> </span> </a>
+                        </li>
+                        <li>
+                          <a href="#" id="menu_442"> <span id="span_menu_442"> </span> </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa fa-user"></i> <span id="span_menu_5"> </span> <i class="fa fa-caret-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" id="menu_51"> <span id="span_menu_51"> </span> </a>
+                    </li>
+                    <li>
+                      <a href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank"
+                        id="menu_52"> <span id="span_menu_52"> </span> </a>
+                    </li>
+                    <li>
+                      <a href="http://blockly.technologiescollege.fr/forum/" target="_blank" id="menu_53"> <span
+                          id="span_menu_53"> </span> </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" id="btn_menu_about" data-toggle="modal" data-target="#aboutModal">
+                    <span id="span_menu_6"> </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <!-- <div id="barre">
+        <div id="divTitre">
+          <div id="btn_levels">
+            <a href="#" id="toolbox_algo" class="btn btn-level btn-default" role='button'>0</a>
+            <a href="#" id="toolbox_arduino_1" class="btn btn-level btn-default" role='button'>1</a>
+            <a href="#" id="toolbox_arduino_2" class="btn btn-level btn-default" role='button'>2</a>
+            <a href="#" id="toolbox_arduino_3" class="btn btn-level btn-default" role='button'>3</a>
+            <a href="#" id="toolbox_arduino_4" class="btn btn-level btn-default" role='button'>4</a>
+            <a href="#" id="toolbox_arduino_all" class="btn btn-level btn-default" role='button'>TOUT</a>
+            <label id="labelToolboxDefinition"></label>
+          </div>
+          <!-- <div id="barre">
           <button id="btn_edit_code" class="btn btn-arduinoRect" data-toggle="modal" data-target="#editModal">
             <span id="icon_edit_btn" class="glyphicon glyphicon-edit"> </span>
           </button>
@@ -236,52 +239,54 @@
           
           <span id="survol" style="color:white"></span>
         </div> -->
+        </div>
+        <div id="divTitreMenu_miniCard">
+          <a href="#" id="miniCard_Menu">
+            <img id="arduino_card_miniPicture_Menu" height="36" border="0" />
+          </a>
+        </div>
       </div>
-      <div id="divTitreMenu_miniCard">
-        <a href="#" id="miniCard_Menu">
-          <img id="arduino_card_miniPicture_Menu" height="36" border="0" />
-        </a>
-      </div>
-    </div>
 
-    <div id="tools_blocks" class="tab-pane active">
-      <button id="btn_undo" class="btn btn-default">
-        <span class="fa fa-undo"> </span>
-      </button>
-      <button id="btn_redo" class="btn btn-default">
-        <span class="fa fa-repeat"> </span>
-      </button>
-      <button id="btn_block_capture" class="btn btn-default">
-        <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
-      </button>
-      <button id="btn_blocs_picture_mini" class="btn btn-default">
-        <span id="icon_btn_blocs_picture_mini" class="glyphicon glyphicon-zoom-out"> </span>
-      </button>
-      <button id="btn_blocs_picture_maxi" class="btn btn-default">
-        <span id="icon_btn_blocs_picture_maxi" class="glyphicon glyphicon-zoom-in"> </span>
-      </button>
-      <button id="btn_blocs_picture" class="btn btn-default">
-        <span id="icon_btn_blocs_picture" class="glyphicon glyphicon-eye-open"> </span>
-      </button>
-      <button id="btn_preview" class="btn btn-default">
-        <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
-      </button>
-      <button id="btn_inline" class="btn btn-default">
-        <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
-      </button>
-      <button id="btn_size" class="btn btn-default">
-        <span id="icon_btn_size" class="glyphicon"> </span>
-      </button>
-      <div id="toggle_code" class="modal-content" style="display: none;">
-        <pre id="pre_previewArduino" title="Code"></pre>
-        <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy"
-          data-clipboard-target="#pre_previewArduino">
-          <span class="glyphicon glyphicon-duplicate"> </span>
+      <div id="tools_blocks" class="tab-pane active">
+
+        <button id="btn_undo" class="btn btn-default">
+          <span class="fa fa-undo"> </span>
         </button>
+        <button id="btn_redo" class="btn btn-default">
+          <span class="fa fa-repeat"> </span>
+        </button>
+        <button id="btn_block_capture" class="btn btn-default">
+          <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
+        </button>
+        <!-- <button id="btn_blocs_picture_mini" class="btn btn-default">
+          <span id="icon_btn_blocs_picture_mini" class="glyphicon glyphicon-zoom-out"> </span>
+        </button>
+        <button id="btn_blocs_picture_maxi" class="btn btn-default">
+          <span id="icon_btn_blocs_picture_maxi" class="glyphicon glyphicon-zoom-in"> </span>
+        </button> -->
+        <!-- <button id="btn_blocs_picture" class="btn btn-default">
+          <span id="icon_btn_blocs_picture" class="glyphicon glyphicon-eye-open"> </span>
+        </button> -->
+        <button id="btn_preview" class="btn btn-default">
+          <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
+        </button>
+        <button id="btn_inline" class="btn btn-default">
+          <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
+        </button>
+        <!-- <button id="btn_size" class="btn btn-default">
+          <span id="icon_btn_size" class="glyphicon"> </span>
+        </button> -->
+
+        <!-- <div id="toggle_code" class="modal-content" style="display: none;">
+          <pre id="pre_previewArduino" title="Code"></pre>
+          <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy"
+            data-clipboard-target="#pre_previewArduino">
+            <span class="glyphicon glyphicon-duplicate"> </span>
+          </button>
+        </div> -->
       </div>
     </div>
-  </div>
-  </div>
+  </header>
   <div id="divBody">
     <div id="menuPanel">
       <div id="menuPanelConfig">
