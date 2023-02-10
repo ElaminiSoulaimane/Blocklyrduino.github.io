@@ -585,7 +585,7 @@ html[dir="RTL"] .colors_category {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(../media/ajax-loading.gif) center no-repeat #fff;
+    background: url(../media/Ripple-1s-200px.svg) center no-repeat #ffffff;
 }
 
 #div_miniPicture:hover {
