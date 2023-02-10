@@ -413,7 +413,8 @@ html[dir="RTL"] #languageMenu {
 }
 #barre{
 	padding : 3px 0px 0px 10px;
-	background-color : #018790;
+	color: #FFCC00;
+	background-color : #10bcc8;
 }
 #barre_h{
 	padding : 5px 5px 5px 10px;
