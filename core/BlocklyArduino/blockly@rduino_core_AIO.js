@@ -884,7 +884,7 @@ BlocklyDuino.init = function() {
             $("#header").css({ "height": "0px" });
             $("#divBody").css({ "top": "0px" });
             $("#logo_Titre").removeClass("hidden");
-            $("#btn_delete").css({ "bottom": "80px" });
+            $("#btn_deleted").css({ "bottom": "80px" });
             $("#divTitreMenu_miniCard").css({
                 'position': 'fixed',
                 'top': '510px',

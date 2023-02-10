@@ -290,8 +290,17 @@ BlocklyDuino.bindFunctions = function() {
 
     var clipboard = new Clipboard('#btn_CopyCode');
 
+    
+
     // Navigation buttons
     $('#btn_delete').on("click", BlocklyDuino.discard);
+    $('#btn_deleted').on('click',function(){
+        var count = BlocklyDuino.workspace.getAllBlocks().length;
+        document.getElementById("modal-text").textContent =MSG['discard'].replace('%1', count);
+    })
+    $('#btn_delete').on('click' ,  function(){
+        $('#btn_delete').attr('data-dismiss','modal')
+    })
     $('#btn_undo').on("click", BlocklyDuino.Undo);
     $('#btn_redo').on("click", BlocklyDuino.Redo);
     $('#btn_pasteIDEArduino').remove();
@@ -880,7 +889,7 @@ BlocklyDuino.init = function() {
             $("#header").css({ "height": "0px" });
             $("#divBody").css({ "top": "0px" });
             $("#logo_Titre").removeClass("hidden");
-            $("#btn_delete").css({ "bottom": "80px" });
+            $("#btn_deleted").css({ "bottom": "80px" });
             $("#divTitreMenu_miniCard").css({
                 'position': 'fixed',
                 'top': '510px',
