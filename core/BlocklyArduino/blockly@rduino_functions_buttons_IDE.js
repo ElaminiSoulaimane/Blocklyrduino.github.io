@@ -204,7 +204,7 @@ BlocklyDuino.load_IDE = function(event) {
  */
 BlocklyDuino.discard = function() {
     var count = BlocklyDuino.workspace.getAllBlocks().length;
-    if (count < 2 || window.confirm(MSG['discard'].replace('%1', count))) {
+    if (count != 0 ) {
         BlocklyDuino.workspace.clear();
         //clean URL from example if opened
         var search = window.location.search;
