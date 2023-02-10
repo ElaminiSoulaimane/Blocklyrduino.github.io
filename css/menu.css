@@ -86,7 +86,7 @@ header {
   transition: all 0.2s ease;
 }
 #main .menu-chks span:before {
-  font-family: 'FontAwesome';
+  
   position: absolute;
   left: 12px;
   top: 10px;
