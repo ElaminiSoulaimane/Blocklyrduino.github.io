@@ -294,7 +294,7 @@ BlocklyDuino.bindFunctions = function() {
         BlocklyDuino.renderContent();
     });
     // Navigation buttons
-    $('#btn_delete').on("click", BlocklyDuino.discard);
+    $('#btn_deleted').on("click", BlocklyDuino.discard);
     $('#btn_undo').on("click", BlocklyDuino.Undo);
     $('#btn_redo').on("click", BlocklyDuino.Redo);
     $('#btn_pasteIDEArduino').remove();

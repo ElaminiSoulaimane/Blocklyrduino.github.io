@@ -488,16 +488,16 @@ html[dir="RTL"] #toggle_code {
   height: 100%;
 }
 
-#btn_deleted {
+/* #btn_deleted {
   position: absolute;
   right: 100px;
   bottom: 40px;
   z-index: 10;
-}
+} */
 
-html[dir="RTL"] #btn_deleted {
+/* html[dir="RTL"] #btn_deleted {
   left: 100px;
-}
+} */
 
 #pre_xml {
   height: 85%;
