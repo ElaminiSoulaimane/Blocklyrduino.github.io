@@ -110,14 +110,12 @@ border-bottom: 5px solid red;
 ------------------------------------------------ */
 .btn-sm, .btn {
 	font-size: 14px;
-	/* line-height: 0; */
-	padding: 3px 10px;
-	border: 1px solid #000000;
+	padding: 10px 10px;
+	border: none;
 }
 .btn-sm:hover, .btn:hover {
-	background-color: #FFFFFF; 
-	border-color: #000000;
-	color: #000000;
+	background-color: #9a35ff; 
+	color: #ffffff;
 }
 .nav {
 	font-size: 14px;
@@ -139,10 +137,12 @@ border-bottom: 5px solid red;
 .btn-level {
 	font-size: 16px;
 	line-height: 0;
-	background-color: #9a35ff;
-	color: #ffffff;
-	padding: 12px 6px;
+	padding: 20px 15px;
 }
+.btn-level:active {
+	background-color: #9a35ff;
+}
+
 #tab_supervision, #tab_blocks, #tab_arduino {
 	font-size: 14px;
 	line-height: 0;
@@ -371,6 +371,8 @@ html[dir="RTL"] .divConfig-hor {
 }
 
 #languageMenu {
+	background-color: #9a35ff;
+	color: #ffffff;
 	/*position: absolute;
 	top: 35px;
 	right: 15px;*/
@@ -383,6 +385,7 @@ html[dir="RTL"] #languageMenu {
 
 #content_area,#content_blocks,#content_factory {
 	height: 100%;
+	background-color: #000000;
 	width: 100%;
 }
 
@@ -420,7 +423,7 @@ html[dir="RTL"] #languageMenu {
 }
 #barre{
 	padding : 3px 0px 0px 10px;
-	color: #FFCC00;
+	
 	background-color : #10bcc8;
 }
 #barre_h{
@@ -520,14 +523,14 @@ html[dir="RTL"] #select_all {
 }
 
 .blocklyToolboxDiv {
-	background-color: #FFFFFF !important;
-	box-shadow: 5px 5px 5px grey !important;
+	background-color: #f0f0f0 !important;
+	
 }
 
 .blocklyFlyoutBackground {
 	fill: #FFFFFF !important;
 	fill-opacity: 1;
-	box-shadow: 5px 5px 5px grey !important;
+	
 }
 
 .blocklyTreeRoot {
