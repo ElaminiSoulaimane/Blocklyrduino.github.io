@@ -64,28 +64,6 @@
 
 <body onload="BlocklyDuino.init()">
   <div class="loading"></div>
-  <!-- Modal delete button -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="modal-text">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="btn_delete" >Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <header id="header">
     <div class="hed">
       <div id="logo_Titre">
@@ -93,6 +71,7 @@
           <img id="clearLink" src="media/BlocklyArduino/logo.png" height="30" />
         </a>
       </div>
+
       <div id="header_titres">
         <div id="divTitreMenu" class="hidden">
           <div id="divTitreMenu_menu">
@@ -241,7 +220,7 @@
             <label id="labelToolboxDefinition"></label>
           </div>
 
-          <!-- <div id="barre">
+           <!-- <div id="barre">
             <button id="btn_edit_code" class="btn btn-arduinoRect" data-toggle="modal" data-target="#editModal">
               <span id="icon_edit_btn" class="glyphicon glyphicon-edit"> </span>
             </button>
@@ -263,11 +242,11 @@
             <span id="survol" style="color:white"></span>
           </div>  -->
         </div>
-        <div id="divTitreMenu_miniCard">
+        <!-- <div id="divTitreMenu_miniCard">
           <a href="#" id="miniCard_Menu">
             <img id="arduino_card_miniPicture_Menu" height="36" border="0" />
           </a>
-        </div>
+        </div> -->
       </div>
 
       <div id="tools_blocks" class="tab-pane active">
@@ -310,7 +289,7 @@
       </div>
     </div>
   </header>
-
+  
   <div id="divBody">
     <div id="menuPanel">
       <div id="menuPanelConfig">
@@ -319,11 +298,11 @@
           <span class="glyphicon glyphicon-alert"> </span>
           <span id="configGlobalLabel"> </span>
         </button>
-        <div id="div_miniPicture">
+        <!-- <div id="div_miniPicture">
           <a id="miniCard">
             <img id="arduino_card_miniPicture" />
           </a>
-        </div>
+        </div> -->
         <button id="btn_config" class="btn btn-sm btn-warning btn-block " data-toggle="modal"
           data-target="#configModal">
           <span class="fa fa-cogs"> </span>
@@ -336,12 +315,12 @@
       </div>
       <div id="menuPanelBlockly" class="margin-top-5">
         <ul id="ul_nav" role="tablist">
-          <li role="presentation" id="tab_supervision" class="disabled">
+          <!-- <li role="presentation" id="tab_supervision" class="disabled">
             <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank">
               <span class="glyphicon glyphicon-transfer"></span>
               <span id="a_supervision"> </span>
             </a>
-          </li>
+          </li> -->
           <li role="presentation" id="tab_blocks" class="active">
             <a href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab">
               <span class="fa fa-puzzle-piece"></span>
@@ -376,6 +355,7 @@
         </a>
       </div>
       <input type="file" id="load" accept=".B@, .xml" style="display: none;" />
+
       <div id="div_tools_button">
         <button id="btn_wiring" class="btn btn-primary">
           <span class="fa fa-plug"></span>
@@ -388,37 +368,37 @@
         <button id="btn_screenduino" class="btn btn-sm btn-primary">
           <span class="glyphicon glyphicon-th"> </span>
         </button>
-        <button id="btn_RGB" class="btn btn-sm btn-primary">
+        <!-- <button id="btn_RGB" class="btn btn-sm btn-primary">
           <span class="fas fa-palette"> </span>
-        </button>
-        <button id="btn_convert" class="btn btn-sm btn-primary">
+        </button> -->
+        <!-- <button id="btn_convert" class="btn btn-sm btn-primary">
           <span class="glyphicon glyphicon-superscript"> </span>
-        </button>
+        </button> -->
         <br />
         <br />
-        <button id="btn_miniMenuPanel" class="btn btn-sm btn-default">
+        <!-- <button id="btn_miniMenuPanel" class="btn btn-sm btn-default">
           <span class="glyphicon glyphicon-step-backward"> </span>
-        </button>
+        </button> -->
         <a href="./index.html" id="btn_reset" class="btn btn-sm btn-danger">
           <span class="glyphicon glyphicon-off"> </span>
         </a>
         <br />
         <br />
-        <div id="div_about">
+        <!-- <div id="div_about">
           <button id="btn_about" type="button" class="btn btn-default btn-sm btn-success" data-toggle="modal"
             data-target="#aboutModal">
             <span id="span_about"> </span>
             <span class="glyphicon glyphicon-user"></span>
           </button>
-        </div>
+        </div> -->
         <br />
-        <div id="div_paypal">
+        <!-- <div id="div_paypal">
           <button id="btn_about" type="button" class="btn btn-default btn-sm btn-danger" data-toggle="modal"
             data-target="#paypalModal">
             <span id="span_about"> </span>
             <span class="glyphicon glyphicon-euro"></span>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- Nav tabs -->
@@ -426,7 +406,7 @@
       <!-- Tab panes -->
       <div id="content_area" class="tab-content">
         <div id="content_blocks" class="tab-pane active" style="position: relative;">
-          <button id="btn_deleted" class="btn btn-danger" type="button" data-toggle="modal" data-target="#exampleModal">
+          <button id="btn_delete" class="btn btn-danger">
             <span class="glyphicon glyphicon-erase"> </span>
             <span id="span_delete"> </span>
           </button>

@@ -1,630 +1,647 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@CHARSET "UTF-8";
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*:focus {
+    outline: 0 !important;
+}
 
 /* @font-face {
 	 font-family: "KonnectRegular";
 	src: url('../fonts/KonnectRegular.otf'); 
 } */
 
-html,body {
-	/* font-family: "KonnectRegular"; */
-	font-family: 'Roboto', sans-serif;
-	height: 100%;
-	background-color: #fff;
-	margin: 0;
-
+html,
+body {
+  /* font-family: "KonnectRegular"; */
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
 }
 
 .rotate180 {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
 }
 
 .rotate270 {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
 }
 
 .rotate90 {
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }
 
 header {
-	background: #f5f5f5;
-	height: 80px;
-	width: 100%;
-
+  background: #f5f5f5;
+  height: 80px;
+  width: 100%;
 }
-.hed{
-	height: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.hed {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #logo_Titre {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #header_titres {
-	
-	
 }
 
 #header_code {
-	margin-left: 205px;
-	margin-bottom: 5px;
-	position: absolute;
+  margin-left: 205px;
+  margin-bottom: 5px;
+  position: absolute;
 }
 
 #header_supervision {
-	margin-left: 210px;
-	margin-bottom: 5px;
-	position: absolute;
+  margin-left: 210px;
+  margin-bottom: 5px;
+  position: absolute;
 }
 
-#divTitre, #divTitreMenu {
-	float: left;
+#divTitre,
+#divTitreMenu {
+  float: left;
 }
 
 #btn_levels {
-	margin-top: 5px;
-	margin-left: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 #divTitre p {
-	font-size: 15px;
-	
+  font-size: 15px;
 }
 
 #div_toolboxes {
-	float: left;
-	margin-top: 5px;
+  float: left;
+  margin-top: 5px;
 }
 
 #tools_blocks {
-	float: right;
-	margin-top: 5px;
-	margin-right: 10px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 #divBody {
-    position: absolute;
-    top:80px;
-    bottom: 5px;
-    width: 100%;
+  position: absolute;
+  top: 80px;
+  bottom: 5px;
+  width: 100%;
 }
 /* surcharge css min pour accéssibilité
 ------------------------------------------------ */
-.ul_nav{
-	background-color: #10bcc8 ;
-	border:1px solid #000000 ;
+.ul_nav {
+  background-color: #10bcc8;
+  border: 1px solid #000000;
 }
-.nav-pills>{
-	border:1px solid #000000 ;
+.nav-pills > {
+  border: 1px solid #000000;
 }
-.nav-pills>li>a{
-	background-color: #ffffff ;
-	border-radius: 10px;
+.nav-pills > li > a {
+  background-color: #ffffff;
+  border-radius: 10px;
 }
-.btn-sm, .btn {
-	font-size: 14px;
-	padding: 10px 10px;
-	border-radius: 10px;
-	border: none;
-}
-.btn-sm:hover, .btn:hover {
-	border: none;
-	background-color: #9a35ff; 
-	color: #ffffff;
-}
-.btn-sm:active, .btn:active {
-	border: none;
-	background-color: #9a35ff; 
-	color: #ffffff;
-}
-.nav {
-	
-	font-size: 14px;
-	line-height: 0;
-	
-	border-radius: 15px ;
-	
-}
-.nav-item:active {
-	font-size: 14px;
-	line-height: 0;
+.btn-sm,
+.btn {
 
-	border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  font-size: large;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-appearance: none;
 }
-#SupNav {
-	border: 0px;
-}
-.btn-level {
-	font-size: 16px;
-	line-height: 0;
-	padding: 20px 15px;
-}
-.btn-level:active {
-	background-color: #9a35ff;
-	
-}
-
-#tab_supervision, #tab_blocks, #tab_arduino {
-	/* background-color: #c92be8;  */
-	font-size: 14px;
-	line-height: 0;
-	padding: 0px 0px;
-}
-#tab_supervision:hover, #tab_blocks:hover, #tab_arduino:hover {	
+.fa, .fas ,.btn  {
 	color: #000000;
 }
-#serialport_ide{
-	top: 5px;
+.btn-sm:hover,
+.btn:hover  {
+  border: none;
+
+  border: none ;
+}
+.btn-sm:active,
+.btn:active {
+  border: none;
+
+}
+.nav {
+  font-size: 14px;
+  line-height: 0;
+
+  border-radius: 15px;
+}
+.nav-item:active {
+  font-size: 14px;
+  line-height: 0;
+
+  border-radius: 15px;
+}
+#SupNav {
+  border: 0px;
+}
+.btn-level {
+  font-size: 16px;
+  line-height: 0;
+  padding: 20px 15px;
+}
+.btn-level:active {
+  background-color: #9a35ff;
+}
+
+#tab_supervision,
+#tab_blocks,
+#tab_arduino {
+  /* background-color: #c92be8;  */
+  font-size: 14px;
+  line-height: 0;
+  padding: 0px 0px;
+}
+#tab_supervision:hover,
+#tab_blocks:hover,
+#tab_arduino:hover {
+  color: #000000;
+}
+#serialport_ide {
+  top: 5px;
 }
 /*----------------------------------------------- */
 .menuPanel-ver {
-	
-	border: 1px solid rgb(165, 165, 165);
-	clear: both;
-	float: left;
-	width: 100px;
-    padding-left: 5px;
-	padding-right: 5px;
-	position: absolute;
-	height: 100%;
+  border: 1px solid rgb(165, 165, 165);
+  clear: both;
+  float: left;
+  width: auto;
+  width: 15%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  height: 100%;
 }
 
 html[dir="RTL"] .menuPanel-ver {
-    clear: both;
-    float: right;
-    width: 200px;
-    padding-left: 0px;
-    padding-right: 10px;
-    position: absolute;
+  clear: both;
+  float: right;
+  width: 200px;
+  padding-left: 0px;
+  padding-right: 10px;
+  position: absolute;
 }
 
 .div_close_modal {
-	padding-right: 10px;	
-	float: right;
-	bottom: 10px;
-	position: absolute;
-	text-align: center;
+  padding-right: 10px;
+  float: right;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
 }
 
 #btn_CopyCode {
-	position: absolute;
-	top: 5px;
-	right: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #btn_card_picture_mini {
-	padding-right: 10px;	
-	float: left;
-	text-align: center;
+  padding-right: 10px;
+  float: left;
+  text-align: center;
 }
 
 #btn_card_picture_maxi {
-	padding-right: 10px;	
-	float: left;
-	text-align: center;
+  padding-right: 10px;
+  float: left;
+  text-align: center;
 }
 
 .div_miniPicture-ver {
-/*     position: absolute; */
-/* 	float: left; */
-/* 	padding-left: 20px; */
-/* 	bottom: 45px; */
-    text-align: center;
-    clear: both;
+  /*     position: absolute; */
+  /* 	float: left; */
+  /* 	padding-left: 20px; */
+  /* 	bottom: 45px; */
+  text-align: center;
+  clear: both;
 }
 
 .div_miniPicture-hor {
   position: absolute;
-	clear: right;
-	float: center;
-	margin: 20px;
-	bottom: 105px;
-	text-align: center;
+  clear: right;
+  float: center;
+  margin: 20px;
+  bottom: 105px;
+  text-align: center;
 }
 
 .div_help_button-ver {
-    width: 200px;
-    bottom: 10px;
-    /* position: absolute; */
-    text-align: center;
+  width: 200px;
+  bottom: 10px;
+  /* position: absolute; */
+  text-align: center;
 }
 
 .div_tools_button-ver {
-    width: 200px;
-    bottom: 50px;
-    position: absolute;
-    text-align: center;
+  width: 100px;
+  bottom: 50px;
+  text-align: center;
 }
+.div_tools_button-ver .btn {
+	
+	margin-top: 10px;
+  }
 
 #div_about {
-    width: 200px;
-    bottom: 130px;
-    text-align: center;
+  width: 200px;
+  bottom: 130px;
+  text-align: center;
 }
 
 .div_help_button-hor {
-    padding-left: 0px;
-    bottom: 10px;
-    position: absolute;
-    text-align: center;
+  padding-left: 0px;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
 }
 
 #div_accessibility_button {
-    width: 200px;
-    bottom: 90px;
-    /* position: absolute; */
-    text-align: center;
+  width: 200px;
+  bottom: 90px;
+  /* position: absolute; */
+  text-align: center;
 }
 
 html[dir="RTL"] .navbar-right {
-    margin-right: -50px;
-    width: 225px;
+  margin-right: -50px;
+  width: 225px;
 }
 
 .btn_ver {
-	text-align : left !important;
-	margin: 5px 0;
+  text-align: left !important;
+  margin: 5px 0;
 }
 
 .divTabpanel-ver {
-    height: 100%;
-	margin-left:205px;
+  height: 100%;
+  margin-left: 205px;
 }
 
 html[dir="RTL"] .divTabpanel-ver {
-    margin-left:0px;
-    margin-right:205px;
+  margin-left: 0px;
+  margin-right: 205px;
 }
 
-html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
-	
-    float: right;
+html[dir="RTL"] #menuPanelConfig,
+html[dir="RTL"] #menuPanelBlockly,
+html[dir="RTL"] #menuPanelFiles {
+  float: right;
 }
 
 .menuPanelBlockly-hor {
-
-	clear:both;
-	float: left;
-	padding-left: 10px;	
-	
+  clear: both;
+  float: left;
+  padding-left: 10px;
 }
 
-html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
-	
-    float: right;
-    padding-right: 10px;
-	margin-top: 10px;
-	
+html[dir="RTL"] .menuPanelBlockly-hor,
+html[dir="RTL"] .menuPanelBlockly-ver {
+  float: right;
+  padding-right: 10px;
+  margin-top: 10px;
 }
 
 .menuPanelFiles-hor {
-	float: right;
-	padding-right: 10px;
+  float: right;
+  padding-right: 10px;
 }
 
 html[dir="RTL"] .menuPanelFiles-hor {
-    float: left;
-    padding-left: 10px;
+  float: left;
+  padding-left: 10px;
 }
 
 .divTabpanel-hor {
-    position: absolute;
-	top: 80px;
-	bottom: 0px;
-	right: 0px;
-	left: 0px;
-    margin-left: 10px;
+  position: absolute;
+  top: 80px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin-left: 10px;
 }
 
 html[dir="RTL"] .divTabpanel-hor {
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
 .divSwitch-hor {
-    float: left;
-    padding-left: 10px;
+  float: left;
+  padding-left: 10px;
 }
 
 html[dir="RTL"] .divSwitch-hor {
-    float: right;
-    padding-right: 10px;
+  float: right;
+  padding-right: 10px;
 }
 
 .divCard-hor {
-    float: left;
-    padding-left: 10px;
+  float: left;
+  padding-left: 10px;
 }
 
 .modal-body-config-global_left {
-    position: relative;
-	height: 280px
+  position: relative;
+  height: 280px;
 }
 
 .arduino_card_mini_picture_div {
-	position:absolute;
-	top:0;
-	right:5px;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 #arduino_card_mini_picture {
-	max-width:220px;
-	max-height:300px;
+  max-width: 220px;
+  max-height: 300px;
 }
 
 html[dir="RTL"] .divCard-hor {
-    float: right;
-    padding-right: 10px;
+  float: right;
+  padding-right: 10px;
 }
 
 .divConfig-hor {
-    float: left;
-    padding-left: 10px;
+  float: left;
+  padding-left: 10px;
 }
 
 html[dir="RTL"] .divConfig-hor {
-    float: right;
-    padding-right: 10px;
+  float: right;
+  padding-right: 10px;
 }
 
 #btn_logout {
-    position: absolute;
-    top: 3px;
+  position: absolute;
+  top: 3px;
 }
 
-#btn_doc-hor{
-	float : left;
-	bottom: 10px;
+#btn_doc-hor {
+  float: left;
+  bottom: 10px;
 }
 
 #languageMenu {
-	background-color: #9a35ff;
-	color: #ffffff;
+  background-color: #9a35ff;
+  color: #ffffff;
 }
 
 html[dir="RTL"] #languageMenu {
-	left: 10px;
-	right: auto;
+  left: 10px;
+  right: auto;
 }
 
-#content_area,#content_blocks,#content_factory {
-	height: 100%;
-	width: 100%;
+#content_area,
+#content_blocks,
+#content_factory {
+  height: 100%;
+  width: 100%;
 }
 
-#content_term,#content_arduino,#content_supervision {
-	padding: 5px 5px 20px 0px;
-	top: 40px;
-	height: 100%;
-	width: 100%;
+#content_term,
+#content_arduino,
+#content_supervision {
+  padding: 5px 5px 20px 0px;
+  top: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 #toggle_code {
-	width: 25%;
-	position: fixed;
-	z-index: 1;
-	right: 25px;
-	top: 50px;
-	bottom: 100px;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  right: 25px;
+  top: 50px;
+  bottom: 100px;
 }
 
-#blockly_l{
-	float:left;
-	height:99%;
-	width:50%;
+#blockly_l {
+  float: left;
+  height: 99%;
+  width: 50%;
 }
-#blockly_r{
-	float:right;
-	height:99%;
-	width:50%;
+#blockly_r {
+  float: right;
+  height: 99%;
+  width: 50%;
 }
 #btn_group {
-	position: absolute;
-	right: 15px;
-	top: 0px;
-	z-index: 10;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  z-index: 10;
 }
-#barre{
-	padding : 3px 0px 0px 10px;
-	
-	background-color : #10bcc8;
+#barre {
+  padding: 3px 0px 0px 10px;
+
+  background-color: #10bcc8;
 }
-#barre_h{
-	padding : 5px 5px 5px 10px;
-	background-color : #018790;
+#barre_h {
+  padding: 5px 5px 5px 10px;
+  background-color: #018790;
 }
-#barre_ide{
-	padding : 2px 5px 5px 10px;
-	background-color : #018790;
+#barre_ide {
+  padding: 2px 5px 5px 10px;
+  background-color: #018790;
 }
 #btn_term {
-	right: 15px;
-	top: 5px;
-	z-index: 10;
+  right: 15px;
+  top: 5px;
+  z-index: 10;
 }
 #pre_arduino {
-    height: 70%;
-    width: 100%;
+  height: 70%;
+  width: 100%;
 }
 #serial-checboxes {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 html[dir="RTL"] #toggle_code {
-    left: 25px;
+  left: 25px;
 }
 
 #toggle_code pre {
-	height: 100%;
+  height: 100%;
 }
 
 #btn_deleted {
-	position: absolute;
-	right: 100px;
-	bottom: 40px;
-	z-index: 10;
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  z-index: 10;
 }
 
 html[dir="RTL"] #btn_deleted {
-    left: 100px;
+  left: 100px;
 }
 
 #pre_xml {
-	height: 85%;
-	width: 100%;
+  height: 85%;
+  width: 100%;
 }
 
 #pre_arduino {
-    height: 65%;
-    width: 100%;
+  height: 65%;
+  width: 100%;
 }
 
 #modal-body-config {
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }
 
 #select_all {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 
 html[dir="RTL"] #select_all {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 #span_select_all {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .blocklySvg {
-	border-top: none !important;
+  border-top: none !important;
 }
 
 #debug_arduino {
-	height: 25%;
-	border-width: 2px;
-	border-color: black;
-	background-color: rgba(8, 8, 8, 1);
-	color: rgba(29, 147, 47, 1);
-	overflow: auto;
-	word-break: break-all;
-	word-wrap: break-word;
-	white-space: pre-wrap;
+  height: 25%;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgba(8, 8, 8, 1);
+  color: rgb(0, 255, 38);
+  overflow: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 #local_debug {
-	height: 31%;
-	width: 100%;
-	border-width: 2px;
-	border-color: black;
-	background-color: rgba(8, 8, 8, 1);
-	color: rgba(29, 147, 47, 1);
-	overflow: auto;
-	word-break: break-all;
-	word-wrap: break-word;
-	white-space: pre-wrap;
+  height: 31%;
+  width: 100%;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgba(8, 8, 8, 1);
+  color: rgb(0, 255, 38);
+  overflow: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .blocklyToolboxDiv {
-	background-color: #f0f0f0 !important;
-	
+  background-color: #f0f0f0 !important;
 }
 
 .blocklyFlyoutBackground {
-	fill: #FFFFFF !important;
-	fill-opacity: 1;
-	
+  fill: #ffffff !important;
+  fill-opacity: 1;
 }
 
 .blocklyTreeRoot {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"] {
-	position: relative;
+  position: relative;
 }
 
 .blocklyToolboxDiv_hide .blocklyTreeRoot_hide [role="treeitem"] {
-	position: fixed;
+  position: fixed;
 }
 
-.blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]	.blocklyTreeRow {
-	line-height: normal !important;
-	padding: 10px 50px 10px 12px !important;
+.blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"] .blocklyTreeRow {
+  line-height: normal !important;
+  padding: 10px 50px 10px 12px !important;
 }
 
-html[dir="RTL"] .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]   .blocklyTreeRow {
-    padding:  10px 50px 10px 12px !important;
+html[dir="RTL"]
+  .blocklyToolboxDiv
+  .blocklyTreeRoot
+  [role="treeitem"]
+  .blocklyTreeRow {
+  padding: 10px 50px 10px 12px !important;
 }
 
 .blocklyTreeRow {
-	height: 40px !important;
-	line-height: 40px !important;
-	border-radius: 10px !important ;
+  height: 40px !important;
+  line-height: 40px !important;
+  border-radius: 10px !important ;
 }
 
- .blocklyTreeRow:hover { 
-	 background-color: #e0e0e0 !important;
-	 color: #000000; 
-	 border-radius: 10px !important ;
- } 
+.blocklyTreeRow:hover {
+  background-color: #e0e0e0 !important;
+  color: #000000;
+  border-radius: 10px !important ;
+}
 
 .blocklyTreeSeparator {
-	background: none repeat scroll 0 0 #e9f9f9 !important;
-	border-bottom: none !important;
-	height: 10px !important;
+  background: none repeat scroll 0 0 #e9f9f9 !important;
+  border-bottom: none !important;
+  height: 10px !important;
 }
 
 .colors_category {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 8px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
 }
 
 html[dir="RTL"] .colors_category {
-    right: 0;
+  right: 0;
 }
 
 .loading {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url(../media/Ripple-1s-200px.svg) center no-repeat #ffffff;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../media/Ripple-1s-200px.svg) center no-repeat #ffffff;
 }
 
 #div_miniPicture:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .vignette {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 .margin-top-5 {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 .blocklyScrollbarKnob {
-  fill: #00929F !important;
+  fill: #00929f !important;
   fill-opacity: 0.7 !important;
 }
 .blocklyScrollbarBackground {
@@ -644,96 +661,116 @@ html[dir="RTL"] .colors_category {
 .draggable {
 }
 
-
 /* Layout graph
 ----------------------------------*/
 #template_tabs4_pin {
-	position: relative;
-    left: 0px;
-	top: -500px;
+  position: relative;
+  left: 0px;
+  top: -500px;
 }
 
 #CanvasGraph_title {
-	position: relative;
-    left: 0px;
+  position: relative;
+  left: 0px;
 }
 
 #CanvasGraph_button_div {
-	position: relative;
-    left: 0px;
+  position: relative;
+  left: 0px;
 }
 
 #CanvasGraph {
-	position: relative;
-	top: -30px;
-    left: 200px;
+  position: relative;
+  top: -30px;
+  left: 200px;
 }
 
 /* Prototype window
 ----------------------------------*/
 .popup_effect {
-  background:#11455A;
+  background: #11455a;
   opacity: 0.2;
 }
-
 
 /* Prototype window
 ----------------------------------*/
 
-.btn-arduino { 
-  color: #018790; 
-  width: 28px;
-  height: 28px;
-  background-color: #006468; 
-  border-color: #000000; 
-  line-height: 28px;
-  padding:0;
-  border-radius:50%;
-} 
-.btn-arduinoRect { 
+.btn-arduino {
   color: #018790;
   width: 28px;
   height: 28px;
-  background-color: #006468; 
-  border-color: #000000; 
-  line-height: 1px;
-  padding:0;
-  border-radius:0px;
-} 
-.btn-arduino:hover,.btn-arduinoRect:hover,.btn-arduino:focus {
-  background-color: #FFFFFF; 
-  border-color: #000000;
-} 
-.btn-arduino:active,.btn-arduinoRect:active,.btn-arduino.active,.open .dropdown-toggle.btn-arduino,.open .dropdown-toggle.btn-arduinoRect  { 
-  background-color: #FFCC00; 
-  border-color: #000000;
-} 
-.btn-arduino.disabled,.btn-arduinoRect[disabled],.btn-arduino[disabled],fieldset[disabled] .btn-arduino,.btn-arduino.disabled:hover,.btn-arduino[disabled]:hover,fieldset[disabled] .btn-arduino:hover, .btn-arduino.disabled:focus, .btn-arduino[disabled]:focus, fieldset[disabled] .btn-arduino:focus, .btn-arduino.disabled:active, .btn-arduino[disabled]:active, fieldset[disabled] .btn-arduino:active, .btn-arduino.disabled.active, .btn-arduino[disabled].active, fieldset[disabled] .btn-arduino.active { 
-  background-color: #FFFFFF; 
-  border-color: #000000; 
-} 
-.btn-arduino .badge { 
-  color: #00929F; 
-  background-color: #ffffff; 
-}
-
-#fenetre_term{
-	width: 630px;
-	height: 415px;
-	border: 1px solid #ccc;
-	padding:0px 5px 5px 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	border-radius: 5px;
-	overflow: auto;
-}
-h4{
-	margin-left: 5px;
-}
-
-.fa, .fas{
-  display: inline-block;
+  background-color: #006468;
  
+  line-height: 28px;
+  padding: 0;
+  border-radius: 50%;
+}
+.btn-arduinoRect {
+  color: #018790;
+  width: 28px;
+  height: 28px;
+  background-color: #006468;
+  
+  line-height: 1px;
+  padding: 0;
+  border-radius: 0px;
+}
+.btn-arduino:hover,
+.btn-arduinoRect:hover,
+.btn-arduino:focus {
+  background-color: #ffffff;
+  
+}
+.btn-arduino:active,
+.btn-arduinoRect:active,
+.btn-arduino.active,
+.open .dropdown-toggle.btn-arduino,
+.open .dropdown-toggle.btn-arduinoRect {
+  background-color: #ffcc00;
+  
+}
+.btn-arduino.disabled,
+.btn-arduinoRect[disabled],
+.btn-arduino[disabled],
+fieldset[disabled] .btn-arduino,
+.btn-arduino.disabled:hover,
+.btn-arduino[disabled]:hover,
+fieldset[disabled] .btn-arduino:hover,
+.btn-arduino.disabled:focus,
+.btn-arduino[disabled]:focus,
+fieldset[disabled] .btn-arduino:focus,
+.btn-arduino.disabled:active,
+.btn-arduino[disabled]:active,
+fieldset[disabled] .btn-arduino:active,
+.btn-arduino.disabled.active,
+.btn-arduino[disabled].active,
+fieldset[disabled] .btn-arduino.active {
+  background-color: #ffffff;
+ 
+}
+.btn-arduino .badge {
+  color: #bbff00;
+  background-color: #ffffff;
+}
+
+#fenetre_term {
+  width: 630px;
+  height: 415px;
+  /* border: 1px solid #ccc; */
+  padding: 0px 5px 5px 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  overflow: auto;
+}
+h4 {
+  margin-left: 5px;
+}
+
+.fa,
+.fas {
+  display: inline-block;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -758,31 +795,87 @@ h4{
   width: 1.28571429em;
   text-align: center;
 }
-.fa-inverse {color: #ffffff;}
-.fa-industry:before{content:"\f275"}
-.fa-times:before{content:"\f00d"}
-.fa-wrench:before{content:"\f0ad"}
-.fa-power-off:before {content: "\f011"}
-.fa-calendar-check-o:before {content: "\f274"}
-.fa-arrow-right:before {content: "\f061"}
-.fa-question-circle:before {content: "\f059"}
-.fa-info-circle:before {content: "\f05a"}
-.fa-camera:before {content: "\f030"}
-.fa-code:before {content: "\f121"}
-.fa-graduation-cap:before {content: "\f19d"}
-.fa-puzzle-piece:before {content: "\f12e"}
-.fa-microchip:before{content:"\f2db"}
-.fa-repeat:before{content:"\f01e"}
-.fa-undo:before{content:"\f0e2"}
-.fa-cloud-download:before{content:"\f0ed"}
-.fa-file-text:before{content:"\f15c"}
-.fa-file:before{content:"\f15b"}
-.fa-folder-open:before{content:"\f07c"}
-.fa-cog:before{content:"\f013"}
-.fa-user:before{content:"\f007"}
-.fa-check:before{content:"\f00c"}
-.fa-sliders:before{content:"\f1de"}
-.fa-envelope:before{content:"\f0e0"}
-.fa-terminal:before{content:"\f120"}
-.fa-paypal:before{content:"\f1ed"}
-.fa-github:before{content:"\f09b"}
+.fa-inverse {
+  color: #ffffff;
+}
+.fa-industry:before {
+  content: "\f275";
+}
+.fa-times:before {
+  content: "\f00d";
+}
+.fa-wrench:before {
+  content: "\f0ad";
+}
+.fa-power-off:before {
+  content: "\f011";
+}
+.fa-calendar-check-o:before {
+  content: "\f274";
+}
+.fa-arrow-right:before {
+  content: "\f061";
+}
+.fa-question-circle:before {
+  content: "\f059";
+}
+.fa-info-circle:before {
+  content: "\f05a";
+}
+.fa-camera:before {
+  content: "\f030";
+}
+.fa-code:before {
+  content: "\f121";
+}
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+.fa-microchip:before {
+  content: "\f2db";
+}
+.fa-repeat:before {
+  content: "\f01e";
+}
+.fa-undo:before {
+  content: "\f0e2";
+}
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+.fa-file-text:before {
+  content: "\f15c";
+}
+.fa-file:before {
+  content: "\f15b";
+}
+.fa-folder-open:before {
+  content: "\f07c";
+}
+.fa-cog:before {
+  content: "\f013";
+}
+.fa-user:before {
+  content: "\f007";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-sliders:before {
+  content: "\f1de";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-terminal:before {
+  content: "\f120";
+}
+.fa-paypal:before {
+  content: "\f1ed";
+}
+.fa-github:before {
+  content: "\f09b";
+}
