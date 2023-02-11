@@ -65,26 +65,27 @@
 <body onload="BlocklyDuino.init()">
   <div class="loading"></div>
 
-  
-      <!-- Modal delete -->
-<div class="modal fade" id="deletModule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="modal-text">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" id="btn_deleted" class="btn btn-primary">Save changes</button>
+
+  <!-- Modal delete -->
+  <div class="modal fade" id="deletModule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-text">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" id="btn_deleted" class="btn btn-primary">Save delete</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <header id="header">
     <div class="hed">
@@ -243,7 +244,7 @@
             <label id="labelToolboxDefinition"></label>
           </div>
 
-           <!-- <div id="barre">
+          <!-- <div id="barre">
             <button id="btn_edit_code" class="btn btn-arduinoRect" data-toggle="modal" data-target="#editModal">
               <span id="icon_edit_btn" class="glyphicon glyphicon-edit"> </span>
             </button>
@@ -293,7 +294,7 @@
           <span id="icon_btn_blocs_picture" class="glyphicon glyphicon-eye-open"> </span>
         </button> -->
 
-        <button id="btn_delete" type="button"  data-toggle="modal" data-target="#deletModule" class="btn btn-default">
+        <button id="btn_delete" type="button" data-toggle="modal" data-target="#deletModule" class="btn btn-default">
           <span class="glyphicon glyphicon-erase"> </span>
           <!-- <span id="span_delete"> </span> -->
         </button>
@@ -318,7 +319,7 @@
       </div>
     </div>
   </header>
-  
+
   <div id="divBody">
     <div id="menuPanel">
       <div id="menuPanelConfig">
@@ -389,8 +390,8 @@
         <button id="btn_wiring" class="btn btn-primary">
           <span class="fa fa-plug"></span>
         </button>
-        <br />
-        <br />
+
+
         <button id="btn_factory" class="btn btn-sm btn-primary">
           <span class="fa fa-industry"> </span>
         </button>
@@ -403,16 +404,16 @@
         <!-- <button id="btn_convert" class="btn btn-sm btn-primary">
           <span class="glyphicon glyphicon-superscript"> </span>
         </button> -->
-        <br />
-        <br />
+
+
         <!-- <button id="btn_miniMenuPanel" class="btn btn-sm btn-default">
           <span class="glyphicon glyphicon-step-backward"> </span>
         </button> -->
         <a href="./index.html" id="btn_reset" class="btn btn-sm btn-danger">
           <span class="glyphicon glyphicon-off"> </span>
         </a>
-        <br />
-        <br />
+
+
         <!-- <div id="div_about">
           <button id="btn_about" type="button" class="btn btn-default btn-sm btn-success" data-toggle="modal"
             data-target="#aboutModal">
@@ -420,7 +421,7 @@
             <span class="glyphicon glyphicon-user"></span>
           </button>
         </div> -->
-        <br />
+
         <!-- <div id="div_paypal">
           <button id="btn_about" type="button" class="btn btn-default btn-sm btn-danger" data-toggle="modal"
             data-target="#paypalModal">
@@ -430,36 +431,37 @@
         </div> -->
       </div>
     </div>
-    <!-- Nav tabs -->
-    <div id="divTabpanel" role="tabpanel">
-      <!-- Tab panes -->
-      <div id="content_area" class="tab-content">
-        
-        <div id="content_blocks" class="tab-pane active" style="position: relative;">
-          <!-- <button id="btn_delete" class="btn btn-danger">
+  </div>
+  <!-- Nav tabs -->
+  <div id="divTabpanel" role="tabpanel">
+    <!-- Tab panes -->
+    <div id="content_area" class="tab-content">
+
+      <div id="content_blocks" class="tab-pane active" style="">
+        <!-- <button id="btn_delete" class="btn btn-danger">
             <span class="glyphicon glyphicon-erase"> </span>
             <span id="span_delete"> </span>
           </button> -->
-        </div>
+      </div>
 
-        <div id="content_arduino" class="tab-pane">
-          <pre id="pre_arduino"></pre>
-          <div id="barre_h">
-            <div id="checkDetails">
-              <input type="checkbox" name="detailedCompilation" id="detailedCompilation" /> <span
-                id="span_detailedCompilation" style="color: white;"> </span>
-            </div>
+      <div id="content_arduino" class="tab-pane">
+        <pre id="pre_arduino"></pre>
+        <div id="barre_h">
+          <div id="checkDetails">
+            <input type="checkbox" name="detailedCompilation" id="detailedCompilation" /> <span
+              id="span_detailedCompilation" style="color: white;"> </span>
           </div>
-          <div id="local_debug"></div>
-          <div id="barre"></div>
         </div>
-        <div id="content_supervision" class="tab-pane">
-        </div>
-        <!--div id="content_xml" class="tab-pane">
-                            <pre id="pre_xml"></pre>
-                    </div-->
+        <div id="local_debug"></div>
+        <div id="barre"></div>
+      </div>
+      <div id="content_supervision" class="tab-pane">
+      </div>
+      <div id="content_xml" class="tab-pane">
+        <pre id="pre_xml"></pre>
       </div>
     </div>
+  </div>
   </div>
   <!-- Modals -->
   <!-- about modal -->
@@ -538,7 +540,7 @@
     </div>
   </div>
   <!-- paypal modal -->
-  <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="paypalModalLabel"
+  <!-- <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="paypalModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -567,7 +569,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ajax modal -->
   <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="ajaxModalLabel"
     aria-hidden="true">
