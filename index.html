@@ -81,7 +81,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" id="btn_deleted" class="btn btn-primary">Save delete</button>
+          <button type="button" id="btn_deleted" class="btn btn-primary">Clear Space</button>
         </div>
       </div>
     </div>
@@ -298,10 +298,14 @@
           <span class="glyphicon glyphicon-erase"> </span>
           <!-- <span id="span_delete"> </span> -->
         </button>
+        <!-- <button id="btn_CopyCode" class="btn btn-default" data-clipboard-action="copy"
+            data-clipboard-target="#pre_previewArduino">
+            <span class="glyphicon glyphicon-duplicate"> </span>
+          </button> -->
 
-        <button id="btn_preview" class="btn btn-default">
+        <!-- <button id="btn_preview" class="btn btn-default">
           <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
-        </button>
+        </button> -->
         <button id="btn_inline" class="btn btn-default">
           <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
         </button>
@@ -310,12 +314,15 @@
         </button> -->
 
         <div id="toggle_code" class="modal-content" style="display: none;">
+
           <pre id="pre_previewArduino" title="Code"></pre>
+
           <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy"
             data-clipboard-target="#pre_previewArduino">
             <span class="glyphicon glyphicon-duplicate"> </span>
           </button>
         </div>
+
       </div>
     </div>
   </header>
@@ -323,112 +330,86 @@
   <div id="divBody">
     <div id="menuPanel">
       <div id="menuPanelConfig">
-        <button id="btn_configGlobal" class="btn btn-sm btn_ver btn-danger btn-block" data-toggle="modal"
+        <button id="btn_configGlobal" class="btn btn-sm " data-toggle="modal"
           data-target="#configModalGlobal">
-          <span class="glyphicon glyphicon-alert"> </span>
-          <span id="configGlobalLabel"> </span>
+          <span class="glyphicon glyphicon-alert"></span>
+          <!-- <span id="configGlobalLabel"> </span> -->
         </button>
         <!-- <div id="div_miniPicture">
           <a id="miniCard">
             <img id="arduino_card_miniPicture" />
           </a>
         </div> -->
-        <button id="btn_config" class="btn btn-sm btn-warning btn-block " data-toggle="modal"
+        <button id="btn_config" class="btn btn-sm" data-toggle="modal"
           data-target="#configModal">
-          <span class="fa fa-cogs"> </span>
-          <span id="span_config"> </span>
+          <span class="fa fa-cogs"></span>
+          <!-- <span id="span_config"> </span> -->
         </button>
-        <a href="#" id="btn_config_kit" target="_blank" class="btn btn-sm btn-warning btn-block hidden" role='button'>
-          <span class="glyphicon glyphicon-th-list"> </span>
-          <span id="span_config_kit"> </span>
-        </a>
+        
       </div>
-      <div id="menuPanelBlockly" class="margin-top-5">
-        <ul id="ul_nav" role="tablist">
-          <!-- <li role="presentation" id="tab_supervision" class="disabled">
-            <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank">
-              <span class="glyphicon glyphicon-transfer"></span>
-              <span id="a_supervision"> </span>
-            </a>
-          </li> -->
-          <li role="presentation" id="tab_blocks" class="active">
-            <a href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab">
+
+
+      <div id="menuPanelBlockly" >
+        
+        <ul id="ul_nav" role="tablist" >
+          
+          <button role="presentation" id="tab_blocks" >
+            <a class="btn btn-sm" href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab">
               <span class="fa fa-puzzle-piece"></span>
-              <span id="a_blocks"> </span>
             </a>
-          </li>
-          <li role="presentation" id="tab_arduino">
-            <a href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab">
+          </button>
+
+          <button role="presentation" id="tab_arduino">
+            <a class="btn btn-sm" href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab">
               <span class="fa fa-code"></span>
-              <!--span class="glyphicon glyphicon-education"></span-->
-              <span id="a_arduino"></span>
             </a>
-          </li>
+          </button>
+
+           
         </ul>
-      </div>
+      </div> 
+
+
       <div id="menuPanelFiles">
-        <a id="btn_saveXML" class='btn btn-sm btn-success btn-block' href="#" role='button'>
+
+        <a id="btn_saveXML" class='btn btn-sm ' href="#" role='button'>
           <span class="fas fa-cloud-download-alt"></span>
           <span id="span_saveXML"> </span>
         </a>
-        <button id="btn_fakeload" class="btn btn-sm btn-success btn-block" accept="*.B@, *.xml">
+
+        <button id="btn_fakeload" class="btn btn-sm " accept="*.B@, *.xml">
           <span class="fas fa-cloud-upload-alt"></span>
           <span id="span_fakeload"> </span>
         </button>
-        <button id="btn_example" class="btn btn-sm btn-info btn-block" data-toggle="modal" data-target="#exampleModal">
+
+        <button id="btn_example" class="btn btn-sm " data-toggle="modal" data-target="#exampleModal">
           <span class="glyphicon glyphicon-list-alt"> </span>
           <span id="span_example"> </span>
         </button>
-        <a id="btn_create_example" class="btn btn-sm btn_ver btn-info btn-block" href="#" target="_blank" role='button'>
+
+        <a id="btn_create_example" class="btn btn-sm btn_ver " href="#" target="_blank" role='button'>
           <span class="glyphicon glyphicon-wrench"> </span>
           <span id="span_create_example"> </span>
         </a>
+        
       </div>
       <input type="file" id="load" accept=".B@, .xml" style="display: none;" />
 
       <div id="div_tools_button">
-        <button id="btn_wiring" class="btn btn-primary">
-          <span class="fa fa-plug"></span>
-        </button>
 
-
+        
+        
         <button id="btn_factory" class="btn btn-sm btn-primary">
           <span class="fa fa-industry"> </span>
         </button>
+      
         <button id="btn_screenduino" class="btn btn-sm btn-primary">
           <span class="glyphicon glyphicon-th"> </span>
         </button>
-        <!-- <button id="btn_RGB" class="btn btn-sm btn-primary">
-          <span class="fas fa-palette"> </span>
-        </button> -->
-        <!-- <button id="btn_convert" class="btn btn-sm btn-primary">
-          <span class="glyphicon glyphicon-superscript"> </span>
-        </button> -->
-
-
-        <!-- <button id="btn_miniMenuPanel" class="btn btn-sm btn-default">
-          <span class="glyphicon glyphicon-step-backward"> </span>
-        </button> -->
+        
         <a href="./index.html" id="btn_reset" class="btn btn-sm btn-danger">
           <span class="glyphicon glyphicon-off"> </span>
-        </a>
-
-
-        <!-- <div id="div_about">
-          <button id="btn_about" type="button" class="btn btn-default btn-sm btn-success" data-toggle="modal"
-            data-target="#aboutModal">
-            <span id="span_about"> </span>
-            <span class="glyphicon glyphicon-user"></span>
-          </button>
-        </div> -->
-
-        <!-- <div id="div_paypal">
-          <button id="btn_about" type="button" class="btn btn-default btn-sm btn-danger" data-toggle="modal"
-            data-target="#paypalModal">
-            <span id="span_about"> </span>
-            <span class="glyphicon glyphicon-euro"></span>
-          </button>
-        </div> -->
+        </a> 
       </div>
     </div>
   </div>
@@ -449,7 +430,7 @@
         <div id="barre_h">
           <div id="checkDetails">
             <input type="checkbox" name="detailedCompilation" id="detailedCompilation" /> <span
-              id="span_detailedCompilation" style="color: white;"> </span>
+              id="span_detailedCompilation" style="color: rgb(255, 255, 255);"> </span>
           </div>
         </div>
         <div id="local_debug"></div>
@@ -886,10 +867,10 @@
     </div>
   </div>
   <!--only for IDE mode -->
-  <div id="wiring_dialog">
+  <!-- <div id="wiring_dialog">
     <iframe frameborder="0" marginwidth="0" marginheight="0">
     </iframe>
-  </div>
+  </div> -->
   <div id="arduino_IDE_code"> </div>
 </body>
 
