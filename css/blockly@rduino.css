@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@CHARSET "UTF-8";
 
 
 /* @font-face {
@@ -743,15 +742,19 @@ h4{
   font-size: 1.2em;
   line-height: 0.75em;
   vertical-align: -15%;
+  text-align: center;
 }
 .fa-1_5x {
   font-size: 1.3em;
+  text-align: center;
 }
 .fa-2x {
   font-size: 2em;
+  text-align: center;
 }
 .fa-3x {
   font-size: 3em;
+  text-align: center;
 }
 .fa-fw {
   width: 1.28571429em;
