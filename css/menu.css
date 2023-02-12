@@ -20,20 +20,7 @@ ul {
   margin: 0;
 }
 
-header {
-  background: #55ff00;
-  padding: 0 7%;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-  -webkit-perspective: 1555px;
-  -moz-perspective: 1555px;
-  perspective: 1555px;
-  width: 100%;
-}
+
 
 #main {
   padding: 2.5em 7%;

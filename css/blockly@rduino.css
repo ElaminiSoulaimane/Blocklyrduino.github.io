@@ -8,7 +8,7 @@ html,
 body {
   /* font-family: "KonnectRegular"; */
 
-  background-color: #fff;
+  background-color: #ffffff;
 
   margin: 0;
   padding: 0;
@@ -37,10 +37,10 @@ body {
 }
 
 header {
-  background: #e6e6e6;
-
+  
+background-color: #f2f2f2;
   width: 100%;
-  border-bottom: 2px solid rgb(136, 136, 136);
+  border-bottom: 1px solid #d3d3d3;
 }
 .hed {
   height: 10%;
@@ -48,25 +48,27 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.bodis {
+#one{
+  
+  background-color: #43ff35;
 }
-#logo_Titre {
+#logo_Titre{
+  width: ;
+  background-color: #ff3535;
+}
+#logo_att{
+  width: ;
+  background-color: #320a5a;
+}
+#tools_blocks{
+  width: 30% ;
+  background-color: #ff35e4;
 }
 
-#header_titres {
-}
 
-#header_code {
-  margin-left: 205px;
-  margin-bottom: 5px;
-  position: absolute;
-}
 
-#header_supervision {
-  margin-left: 210px;
-  margin-bottom: 5px;
-  position: absolute;
-}
+
+
 
 #divTitre,
 #divTitreMenu {
@@ -87,11 +89,7 @@ header {
   margin-top: 5px;
 }
 
-#tools_blocks {
-  float: right;
-  margin-top: 5px;
-  margin-right: 10px;
-}
+
 
 /* surcharge css min pour accéssibilité
 ------------------------------------------------ */
@@ -240,15 +238,11 @@ html[dir="RTL"] .navbar-right {
   text-align: left !important;
   margin: 5px 0;
 }
-#menuPanelConfig {
-	background-color: #fbff00;
-	width: 100%;
-	
-	
-}
-html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
+
+
+/* html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
     float: right;
-}
+} */
 
 .menuPanelBlockly-hor {
   clear: both;
@@ -350,28 +344,31 @@ html[dir="RTL"] #languageMenu {
 }
 
 #content_blocks {
-  background-color: #ffa600 !important;
-  max-height: 650px !important;
+  
+  max-height: 100% !important;
   width: 75% !important;
 }
 #divBody {
-  background-color: #41ffe6;
-  max-height: 650px !important;
+  border-right: 1px solid #d3d3d3;
+  max-height: 100% !important;
   width: 5% !important;
+  display: flex;
+
 }
 #content_arduino {
-  background-color: #fbff00 !important;
-  max-height: 650px !important;
+  max-height: 100% !important;
   width: 30% !important;
 }
-#pre_arduino {
+#pre_previewArduino {
+  background-color: #f2f2f2;
   border: none;
   height: 100%;
   width: 100%;
+  border-left: 1px solid #d3d3d3;
 }
 #menuPanel{
-	justify-content: flex-start;
-	background-color: #0080ff;
+	
+	background-color: #587a9b;
 }
 
 /* back-block */
@@ -392,14 +389,7 @@ html[dir="RTL"] #languageMenu {
 	
 } */
 
-#toggle_code {
-  width: 25%;
-  position: fixed;
-  z-index: -1;
-  right: 25px;
-  top: 50px;
-  bottom: 100px;
-}
+
 
 #blockly_l {
   float: left;
@@ -439,13 +429,7 @@ html[dir="RTL"] #languageMenu {
 #serial-checboxes {
   margin-left: 20px;
 }
-html[dir="RTL"] #toggle_code {
-  left: 25px;
-}
 
-#toggle_code pre {
-  height: 100%;
-}
 .btn-primary {
   background-color: #9a35ff;
 }
@@ -492,7 +476,7 @@ html[dir="RTL"] #select_all {
   border-width: 2px;
   border-color: black;
   background-color: rgba(8, 8, 8, 1);
-  color: rgba(29, 147, 47, 1);
+  /* color: rgba(29, 147, 47, 1); */
   overflow: auto;
   word-break: break-all;
   word-wrap: break-word;
@@ -505,7 +489,7 @@ html[dir="RTL"] #select_all {
   border-width: 2px;
   border-color: black;
   background-color: rgba(8, 8, 8, 1);
-  color: rgba(29, 147, 47, 1);
+  /* color: rgba(29, 147, 47, 1); */
   overflow: auto;
   word-break: break-all;
   word-wrap: break-word;
@@ -735,7 +719,7 @@ h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
-.fa-lg {
+/* .fa-lg {
   font-size: 1.2em;
   line-height: 0.75em;
   vertical-align: -15%;
@@ -840,13 +824,34 @@ h4 {
 }
 .fa-github:before {
   content: "\f09b";
+} */
+
+#menuPanelConfig {
+	text-align: center;
+background-color: #2bb9f1;
+
+
 }
 
+
 .btnt{
-	
-	background-color: #9a35ff;
+	 
 	color: #ffffff;
-    padding: 15px 15px;
-    border: none;
-    text-align: center;
+
+
+
+
 }
+.btnt i{
+
+font-size: 30px;
+
+}
+.btnt:hover{
+	
+
+	color: #000000;
+   
+}
+
+  
