@@ -336,7 +336,78 @@
     <!-- Tab panes -->
     <div id="content_area" >
       <div id="divBody">
-        
+        <div id="menuPanel">
+          <div id="menuPanelConfig">
+
+            <button id="btn_configGlobal" class="btnt" data-toggle="modal" data-target="#configModalGlobal">
+              <span class="glyphicon glyphicon-alert"></span>
+             
+            </button>
+           
+            <button id="btn_config" class="btnt" data-toggle="modal" data-target="#configModal">
+              <span class="fa fa-cogs"></span>
+            
+            </button>
+    
+          </div>
+    
+    
+          <div id="menuPanelBlockly">
+    
+    
+    
+            <button role="presentation" id="tab_blocks">
+              <a class="btn btn-sm" href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab">
+                <span class="fa fa-puzzle-piece"></span>
+              </a>
+            </button>
+    
+            <button role="presentation" id="tab_arduino">
+              <a class="btn btn-sm" href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab">
+                <span class="fa fa-code"></span>
+              </a>
+            </button>
+    
+    
+          </div>
+    
+    
+          <div id="menuPanelFiles">
+    
+            <a id="btn_saveXML" class='btn btn-sm ' href="#" role='button'>
+              <span class="fas fa-cloud-download-alt"></span>
+              <span id="span_saveXML"> </span>
+            </a>
+    
+            <button id="btn_fakeload" class="btn btn-sm " accept="*.B@, *.xml">
+              <span class="fas fa-cloud-upload-alt"></span>
+              <span id="span_fakeload"> </span>
+            </button>
+    
+            <button id="btn_example" class="btn btn-sm " data-toggle="modal" data-target="#exampleModal">
+              <span class="glyphicon glyphicon-list-alt"> </span>
+              <span id="span_example"> </span>
+            </button>
+    
+    
+    
+          </div>
+          <input type="file" id="load" accept=".B@, .xml" style="display: none;" />
+    
+          <div id="div_tools_button">
+            <button id="btn_factory" class="btn btn-sm btn-primary">
+              <span class="fa fa-industry"> </span>
+            </button>
+    
+            <button id="btn_screenduino" class="btn btn-sm btn-primary">
+              <span class="glyphicon glyphicon-th"> </span>
+            </button>
+    
+            <a href="./index.html" id="btn_reset" class="btn btn-sm btn-danger">
+              <span class="glyphicon glyphicon-off"> </span>
+            </a>
+          </div>
+        </div>
       </div>
       <!-- block pransipal  -->
       <div id="content_blocks" >
