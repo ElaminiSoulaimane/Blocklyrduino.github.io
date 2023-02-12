@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,10 +5,6 @@
 
 html,
 body {
-  /* font-family: "KonnectRegular"; */
-
-  background-color: #ffffff;
-
   margin: 0;
   padding: 0;
 }
@@ -37,38 +32,44 @@ body {
 }
 
 header {
-  
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
   width: 100%;
   border-bottom: 1px solid #d3d3d3;
 }
 .hed {
-  height: 10%;
+  height: 8.3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#one{
-  
-  background-color: #43ff35;
+#one {
+  display: flex;
+  height: 100%;
+  width: 76%;
 }
-#logo_Titre{
-  width: ;
-  background-color: #ff3535;
+#logo_Titre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 18.8%;
+  height: 100%;
 }
-#logo_att{
-  width: ;
-  background-color: #320a5a;
+#logo_att {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
 }
-#tools_blocks{
-  width: 30% ;
-  background-color: #ff35e4;
+#tools_blocks {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 24% !important;
+  height: 100%;
+  border-left: 1px solid #d3d3d3;
 }
-
-
-
-
-
 
 #divTitre,
 #divTitreMenu {
@@ -88,8 +89,6 @@ background-color: #f2f2f2;
   float: left;
   margin-top: 5px;
 }
-
-
 
 /* surcharge css min pour accéssibilité
 ------------------------------------------------ */
@@ -144,10 +143,6 @@ background-color: #f2f2f2;
 }
 
 /*----------------------------------------------- */
-.menuPanel-ver {
-  width: 100px;
-  height: 650px !important;
-}
 
 html[dir="RTL"] .menuPanel-ver {
   clear: both;
@@ -238,7 +233,6 @@ html[dir="RTL"] .navbar-right {
   text-align: left !important;
   margin: 5px 0;
 }
-
 
 /* html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
     float: right;
@@ -339,36 +333,30 @@ html[dir="RTL"] #languageMenu {
 
 #content_area {
   display: flex !important;
-  height: 100%;
+  height: 90%;
   width: 100% !important;
 }
 
 #content_blocks {
-  
   max-height: 100% !important;
-  width: 75% !important;
+  width: 76.02%;
 }
-#divBody {
-  border-right: 1px solid #d3d3d3;
-  max-height: 100% !important;
-  width: 5% !important;
-  display: flex;
 
-}
 #content_arduino {
   max-height: 100% !important;
-  width: 30% !important;
+  width: 24% !important;
 }
 #pre_previewArduino {
   background-color: #f2f2f2;
   border: none;
+  border-radius: none;
   height: 100%;
   width: 100%;
   border-left: 1px solid #d3d3d3;
+  width: 100%;
 }
-#menuPanel{
-	
-	background-color: #587a9b;
+#menuPanel {
+  background-color: #587a9b;
 }
 
 /* back-block */
@@ -388,8 +376,6 @@ html[dir="RTL"] #languageMenu {
 	
 	
 } */
-
-
 
 #blockly_l {
   float: left;
@@ -497,7 +483,9 @@ html[dir="RTL"] #select_all {
 }
 
 .blocklyToolboxDiv {
-  background-color: #f0f0f0 !important;
+  width: 18.8%;
+  background-color: #f2f2f2;
+  border-right: 1px solid #d3d3d3;
 }
 
 .blocklyFlyoutBackground {
@@ -826,32 +814,48 @@ h4 {
   content: "\f09b";
 } */
 
-#menuPanelConfig {
-	text-align: center;
+/* #menuPanelConfig {
+	
 background-color: #2bb9f1;
 
 
+} */
+
+
+.btnt i {
+  font-size: 1em;
+  padding: 5px;
+}
+.btntk {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: .9em;
+  position: relative;
+  background: transparent;
+  border-width: 0;
+  text-decoration: none;
+  color: #000000;
+}
+.btntk span {
+  opacity: .9;
+}
+.btnt:hover {
+  color: #a41212;
 }
 
-
-.btnt{
-	 
-	color: #ffffff;
-
-
-
-
+#pre_previewArduino {
+  font-family: monospace;
+  font-size: 0.8em;
+  padding: 20px;
 }
-.btnt i{
-
-font-size: 30px;
-
+pre .unselectable {
+  width: 100%;
 }
-.btnt:hover{
-	
-
-	color: #000000;
-   
+::selection {
+  background-color: #f2f2f2;
+  color: #7dc000f3;
 }
-
-  

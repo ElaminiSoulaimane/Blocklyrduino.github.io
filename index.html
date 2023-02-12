@@ -92,51 +92,136 @@
 
   <header id="header">
     <div class="hed">
-      <div id="one" >
+      <div id="one">
         <div id="logo_Titre">
           <a href="./index.html">
             <img id="clearLink" src="media/BlocklyArduino/logo.png" height="30" />
           </a>
         </div>
-        <div id="logo_att" >
-      </div>
-      
+        <div id="logo_att">
 
+          <a id="btn_undo" class="btnt ">
+            <div class="btntk">
+              <span class="fa fa-undo"> </span>
+              <span>Settings</span>
+            </div>
+            
+          </a>
+          <a id="btn_redo" class="btnt">
+            <div class="btntk">
+              <span class="fa fa-repeat"> </span>
+              <span>Settings</span>
+            </div>
+            
+          </a>
+
+          <a id="btn_block_capture" class="btnt">
+            
+            <div class="btntk">
+              <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
+              <span>Settings</span>
+            </div>
+          </a>
+          <a id="btn_delete" type="button" data-toggle="modal" data-target="#deletModule" class="btnt">
+            
+            <div class="btntk">
+              <i class="fa-regular fa-trash-can"></i>
+              <span>Clear</span>
+            </div>
+            
+  
+          </a>
+          <a id="btn_inline" class="btnt">
+            <div class="btntk">
+              <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
+              <span>Settings</span>
+            </div>
+           
+          </a>
+  
+          <a id="btn_configGlobal" class="btnt" data-toggle="modal" data-target="#configModalGlobal">
+            <div class="btntk">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Settings</span>
+            </div>
+            
+
+          </a>
+          <a id="btn_config" class="btnt" data-toggle="modal" data-target="#configModal">
+            
+            <div class="btntk">
+              <i class="fa-solid fa-stairs"></i>
+              <span>Settings</span>
+            </div>
+
+          </a>
+          <a id="btn_saveXML" class='btnt' href="#" role='button'>
+            
+            <div class="btntk">
+              <i class="fa-solid fa-cloud-arrow-down "></i>
+              <span>Settings</span>
+            </div>
+
+          </a>
+          <a id="btn_fakeload" class="btnt" accept="*.B@, *.xml">
+           
+            <div class="btntk">
+              <i class="fa-solid fa-cloud-arrow-up "></i>
+              <span>Settings</span>
+            </div>
+
+          </a>
+          <a id="btn_example" class="btnt" data-toggle="modal" data-target="#exampleModal">
+           
+            <div class="btntk">
+              <i class="fa-solid fa-list-check "></i>
+              <span>Settings</span>
+            </div>
+
+          </a>
+          <a id="btn_factory" class="btnt">
+            
+            <div class="btntk">
+              <i class="fa-solid fa-industry"></i>
+              <span>Settings</span>
+            </div>
+          </a>
+          <a id="btn_screenduino" class="btnt">
+            
+            <div class="btntk">
+              <i class="fa-solid fa-table-cells"></i>
+              <span>Settings</span>
+            </div>
+          </a>
+          <a href="./index.html" id="btn_reset" class="btnt">
+            
+            <div class="btntk">
+              <i class="fa-solid fa-power-off"></i>
+              <span>Settings</span>
+            </div>
+          </a>
+
+        </div>
       </div>
       <div id="tools_blocks" class="tab-pane active">
 
-        <button id="btn_undo" class="btn btn-default">
-          <span class="fa fa-undo"> </span>
-        </button>
-        <button id="btn_redo" class="btn btn-default">
-          <span class="fa fa-repeat"> </span>
-        </button>
-        <button id="btn_block_capture" class="btn btn-default">
-          <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
-        </button>
-        <button id="btn_delete" type="button" data-toggle="modal" data-target="#deletModule" class="btn btn-default">
-          <span class="glyphicon glyphicon-erase"> </span>
-          
-        </button>
-        <button id="btn_CopyCode" class="btn btn-default" data-clipboard-action="copy"
-          data-clipboard-target="#pre_previewArduino">
-          <span class="glyphicon glyphicon-duplicate"> </span>
-        </button>
+        <a id="btn_CopyCode" class=" btnt" data-clipboard-action="copy"
+            data-clipboard-target="#pre_previewArduino">
+            
+            <div class="btntk">
+              <i class="fa-solid fa-copy"></i>
+              <span>Copy</span>
+            </div>
+          </a>
 
-        
-        <button id="btn_inline" class="btn btn-default">
-          <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
-        </button>
-       
 
-       
-          
 
-          
-        </div>
-        
+
 
       </div>
+
+
+    </div>
     </div>
   </header>
 
@@ -147,44 +232,12 @@
 
   <!-- Tab panes -->
   <div id="content_area">
-   
+
     <div id="divBody">
       <div id="menuPanel">
 
         <div id="menuPanelConfig">
-          <ul>
-            <li><a id="btn_configGlobal" class="btnt" data-toggle="modal" data-target="#configModalGlobal">
-                <i class="fa-solid fa-circle-exclamation "></i>
 
-              </a></li>
-            <li> <a id="btn_config" class="btnt" data-toggle="modal" data-target="#configModal">
-                <i class="fa-solid fa-gear "></i>
-
-              </a></li>
-            <li><a id="btn_saveXML" class='btnt' href="#" role='button'>
-                <i class="fa-solid fa-cloud-arrow-down "></i>
-
-              </a></li>
-
-            <li><a id="btn_fakeload" class="btnt" accept="*.B@, *.xml">
-                <i class="fa-solid fa-cloud-arrow-up "></i>
-
-              </a></li>
-
-            <li><a id="btn_example" class="btnt" data-toggle="modal" data-target="#exampleModal">
-                <i class="fa-solid fa-list-check "></i>
-
-              </a></li>
-            <li><a id="btn_factory" class="btnt">
-                <i class="fa-solid fa-industry"></i>
-              </a></li>
-            <li><a id="btn_screenduino" class="btnt">
-              <i class="fa-solid fa-table-cells"></i>
-              </a></li>
-            <li><a href="./index.html" id="btn_reset" class="btnt">
-              <i class="fa-solid fa-power-off"></i>
-              </a></li>
-          </ul>
         </div>
 
 
@@ -219,7 +272,11 @@
 
     <div id="content_arduino">
       <!-- <pre id="pre_arduino"></pre> -->
-      <pre id="pre_previewArduino" title="Code"></pre>
+      <pre class="unselectable" id="pre_previewArduino" title="Code">
+        <code>
+        </code>
+      </pre>
+
     </div>
 
   </div>
