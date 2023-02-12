@@ -144,9 +144,9 @@ header {
 #serialport_ide {
   top: 5px;
 }
+
 /*----------------------------------------------- */
 .menuPanel-ver {
-
   width: 100px;
   height: 650px !important;
 }
@@ -240,7 +240,7 @@ html[dir="RTL"] .navbar-right {
   text-align: left !important;
   margin: 5px 0;
 }
-.menuPanelConfig {
+#menuPanelConfig {
 	background-color: #fbff00;
 	width: 100%;
 	
@@ -368,6 +368,10 @@ html[dir="RTL"] #languageMenu {
   border: none;
   height: 100%;
   width: 100%;
+}
+#menuPanel{
+	justify-content: flex-start;
+	background-color: #0080ff;
 }
 
 /* back-block */
@@ -837,8 +841,12 @@ h4 {
 .fa-github:before {
   content: "\f09b";
 }
+
 .btnt{
-	flex-direction: flex-start;
-	background-color: #0080ff;
-	padding: 10px 10px;
+	
+	background-color: #9a35ff;
+	color: #ffffff;
+    padding: 15px 15px;
+    border: none;
+    text-align: center;
 }
